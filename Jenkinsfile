@@ -12,7 +12,7 @@ pipeline {
 			}
 		}
 
-	stages {
+
 		stage ('stage-2') {
 			steps {
 				sh "mkdir puuuf"

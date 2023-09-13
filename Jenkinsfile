@@ -1,0 +1,22 @@
+pipeline {
+	agent {
+		label {
+			label 'built-in'
+			customWorkspace '/mnt/myproject'
+		}
+	}
+	stages {
+		stage ('stage-1') {
+			steps {
+				sh "mkdir test"
+			}
+		}
+
+	stages {
+		stage ('stage-2') {
+			steps {
+				sh "mkdir puuuf"
+			}
+		}
+	}
+}
